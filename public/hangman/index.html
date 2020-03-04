@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" href="../css/styles.css" />
-    <style>
-    </style>
-</head>
-<body>
-    <div class="content">
-        time to get to hanging.... I mean guessing...
-    </div>
+    <head>
+        <link rel="stylesheet" href="../css/styles.css" />
+        <style></style>
+    </head>
+    <body>
+        <h1 id="content" class="content">
+            Let's play hangman!
+        </h1>
+        <h3>Guesses <span id='guesses' >6</span></h3>
+        <div>
+            <div class="wordSpot" id="wordSpot"></div>
+        </div>
+        <div>
+            <h3>Letters guessed</h3>
+            <div id="pGuesses"></div>
+        </div>
+        <form action="/hangman">
+        <button class='none' id='reset'type="submit">Try again?</button>
+    </form>
+    </body>
     <script src="scripts.js"></script>
-</body>
-
 </html>
